@@ -44,9 +44,7 @@ body.dark {
   --textColor02: #{$textColor02Dark};
 }
 
-/*
-
-  @media (prefers-color-scheme: no-preference) {
+@media (prefers-color-scheme: no-preference) {
   body.light {
     --background: #{$backgroundLight};
     --cardBackground: #{$cardBackgroundLight};
@@ -77,7 +75,4 @@ body.dark {
     --textColor01: #{$textColor01Light};
     --textColor02: #{$textColor02Light};
   }
-
-
-
-*/
+}

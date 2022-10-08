@@ -21,9 +21,7 @@ body.dark {
   --textColor02: #ffffff;
 }
 
-/*
-
-  @media (prefers-color-scheme: no-preference) {
+@media (prefers-color-scheme: no-preference) {
   body.light {
     --background: #f6f8ff;
     --cardBackground: #fefefe;
@@ -33,7 +31,6 @@ body.dark {
     --textColor02: #4b6a9b;
   }
 }
-
 @media (prefers-color-scheme: dark) {
   body.dark {
     --background: #141d2f;
@@ -44,7 +41,6 @@ body.dark {
     --textColor02: #ffffff;
   }
 }
-
 @media (prefers-color-scheme: light) {
   body.light {
     --background: #f6f8ff;
@@ -54,10 +50,7 @@ body.dark {
     --textColor01: #697c9a;
     --textColor02: #4b6a9b;
   }
-
-
-
-*/
+}
 /**********************************************************************/
 /*setting*/
 /**********************************************************************/
@@ -103,7 +96,7 @@ h2 {
   color: var(--textColor01);
 }
 
-.profile-id {
+.profile-login {
   font-size: 16px;
   color: #0079ff;
   margin-bottom: 15px;
@@ -221,6 +214,7 @@ main .container .github-container .logo-text-flexbox {
 main .container .github-container .logo-text-flexbox .logo-container {
   width: 117px;
   height: 117px;
+  background-size: 100%;
   border-radius: 100%;
   background-color: rgb(221, 221, 221);
 }
