@@ -1,0 +1,306 @@
+/********************************************************************/
+/***************************Setting colors***************************/
+/********************************************************************/
+/***************************Setting body switch***************************/
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+body.light {
+  --background: #f6f8ff;
+  --cardBackground: #fefefe;
+  --bordershadow: #cbcccd;
+  --titlesTextColor: #2b3442;
+  --textColor01: #697c9a;
+  --textColor02: #4b6a9b;
+}
+
+body.dark {
+  --background: #141d2f;
+  --cardBackground: #1e2a47;
+  --bordershadow: #141d2f;
+  --titlesTextColor: #ffffff;
+  --textColor01: #ffffff;
+  --textColor02: #ffffff;
+}
+
+/*
+
+  @media (prefers-color-scheme: no-preference) {
+  body.light {
+    --background: #f6f8ff;
+    --cardBackground: #fefefe;
+    --bordershadow: #cbcccd;
+    --titlesTextColor: #2b3442;
+    --textColor01: #697c9a;
+    --textColor02: #4b6a9b;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body.dark {
+    --background: #141d2f;
+    --cardBackground: #1e2a47;
+    --bordershadow: #141d2f;
+    --titlesTextColor: #ffffff;
+    --textColor01: #ffffff;
+    --textColor02: #ffffff;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body.light {
+    --background: #f6f8ff;
+    --cardBackground: #fefefe;
+    --bordershadow: #cbcccd;
+    --titlesTextColor: #2b3442;
+    --textColor01: #697c9a;
+    --textColor02: #4b6a9b;
+  }
+
+
+
+*/
+/**********************************************************************/
+/*setting*/
+/**********************************************************************/
+/****************************setting fonts***************************/
+/****************************Setting page****************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  margin-block: 0;
+  outline: none;
+  font-family: "Space Mono", sans-serif;
+}
+
+body {
+  text-align: left;
+  background: var(--background);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--textColor02);
+  transition: background-color 0.3s ease-in-out;
+}
+
+a,
+a:visited {
+  color: rgb(141, 37, 37);
+}
+
+/****************************setting text*****************************/
+h1,
+h3 {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--titlesTextColor);
+}
+
+h2 {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: var(--textColor01);
+}
+
+.profile-id {
+  font-size: 16px;
+  color: #0079ff;
+  margin-bottom: 15px;
+}
+
+P {
+  font-size: 13px;
+}
+
+.profile-repos,
+.profile-followers,
+.profile-following {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--titlesTextColor);
+}
+
+/***************************Setting mixxin***************************/
+/**********************************************************************/
+/*Main*/
+/**********************************************************************/
+/*center element in page*/
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main .container {
+  width: 730px;
+  /********************Media********************/
+  /*********************************************/
+}
+@media screen and (max-width: 760px) {
+  main .container {
+    width: 90%;
+  }
+}
+main .container .nav-flexbox {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 40px;
+}
+main .container .nav-flexbox .switch-flexbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+main .container .nav-flexbox .switch-flexbox .theme-icon {
+  margin-left: 16px;
+  width: 20px;
+  height: 20px;
+  background: url(".//../../assets/icon-moon.svg");
+}
+main .container .nav-flexbox .switch-flexbox .darkclicked {
+  background: url(".//../../assets/icon-sun.svg");
+}
+main .container .search-input {
+  position: relative;
+  width: 100%;
+  height: 69px;
+  font-size: 18px;
+  background-color: var(--cardBackground);
+  background-image: url("..//../assets/icon-search.svg");
+  color: var(--titlesTextColor);
+  background-repeat: no-repeat;
+  background-position: 25px 25px;
+  border-radius: 15px;
+  border: none;
+  padding-left: 70px;
+  box-shadow: 0px 12px 20px 0px var(--bordershadow);
+}
+main .container .error {
+  position: absolute;
+  font-weight: 700;
+  color: #f74646;
+  transform: translate(-240px, 24px);
+}
+main .container button {
+  position: absolute;
+  width: 106px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: #0079ff;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transform: translate(-115px, 10px);
+  transition: 0.2s ease;
+}
+main .container button:hover {
+  background-color: #60abff;
+}
+main .container .github-container {
+  width: 100%;
+  height: 419px;
+  background-color: var(--cardBackground);
+  border-radius: 15px;
+  margin-top: 30px;
+  box-shadow: 0px 12px 20px 0px var(--bordershadow);
+}
+main .container .github-container .logo-text-flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 38px 48px;
+}
+main .container .github-container .logo-text-flexbox .logo-container {
+  width: 117px;
+  height: 117px;
+  border-radius: 100%;
+  background-color: rgb(221, 221, 221);
+}
+main .container .github-container .logo-text-flexbox .text-container {
+  width: 76%;
+}
+main .container .github-container .logo-text-flexbox .text-container .text-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+main .container .github-container .logo-text-flexbox .text-container .profile-bio {
+  width: 100%;
+  height: 60px;
+}
+main .container .github-container .logo-text-flexbox .text-container .card-grid {
+  display: grid;
+  align-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 30px);
+  width: 100%;
+  height: 85px;
+  border-radius: 15px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+  background-color: var(--background);
+}
+main .container .github-container .logo-text-flexbox .text-container .info-grid {
+  display: grid;
+  align-content: center;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 30px);
+  row-gap: 10px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  width: 100%;
+  height: 85px;
+}
+main .container .github-container .logo-text-flexbox .text-container .info-grid .city,
+main .container .github-container .logo-text-flexbox .text-container .info-grid .twitter,
+main .container .github-container .logo-text-flexbox .text-container .info-grid .website,
+main .container .github-container .logo-text-flexbox .text-container .info-grid .github {
+  display: flex;
+  flex-direction: row;
+}
+main .container .github-container .logo-text-flexbox .text-container .info-grid .city .profile-city,
+main .container .github-container .logo-text-flexbox .text-container .info-grid .city .profile-twitter,
+main .container .github-container .logo-text-flexbox .text-container .info-grid .city .profile-github,
+main .container .github-container .logo-text-flexbox .text-container .info-grid .twitter .profile-city,
+main .container .github-container .logo-text-flexbox .text-container .info-grid .twitter .profile-twitter,
+main .container .github-container .logo-text-flexbox .text-container .info-grid .twitter .profile-github,
+main .container .github-container .logo-text-flexbox .text-container .info-grid .website .profile-city,
+main .container .github-container .logo-text-flexbox .text-container .info-grid .website .profile-twitter,
+main .container .github-container .logo-text-flexbox .text-container .info-grid .website .profile-github,
+main .container .github-container .logo-text-flexbox .text-container .info-grid .github .profile-city,
+main .container .github-container .logo-text-flexbox .text-container .info-grid .github .profile-twitter,
+main .container .github-container .logo-text-flexbox .text-container .info-grid .github .profile-github {
+  margin-left: 20px;
+}
+main .container .github-container .logo-text-flexbox .text-container .info-grid .city .profile-website,
+main .container .github-container .logo-text-flexbox .text-container .info-grid .twitter .profile-website,
+main .container .github-container .logo-text-flexbox .text-container .info-grid .website .profile-website,
+main .container .github-container .logo-text-flexbox .text-container .info-grid .github .profile-website {
+  margin-left: 16px;
+}
+main .container .github-container .logo-text-flexbox .text-container .info-grid .city .user-icon path,
+main .container .github-container .logo-text-flexbox .text-container .info-grid .twitter .user-icon path,
+main .container .github-container .logo-text-flexbox .text-container .info-grid .website .user-icon path,
+main .container .github-container .logo-text-flexbox .text-container .info-grid .github .user-icon path {
+  fill: var(--textColor02);
+}
+
+/*****align footer and set size and color*****/
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 20px auto;
+  color: rgb(201, 193, 193);
+}/*# sourceMappingURL=index.css.map */

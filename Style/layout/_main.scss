@@ -1,0 +1,168 @@
+/**********************************************************************/
+/*Main*/
+/**********************************************************************/
+
+/*center element in page*/
+
+main {
+  @include center;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .container {
+    width: 730px;
+
+    /********************Media********************/
+    @media screen and (max-width: 760px) {
+      width: 90%;
+    }
+    /*********************************************/
+
+    .nav-flexbox {
+      @include row;
+      align-content: center;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 40px;
+
+      .switch-flexbox {
+        @include row;
+        align-items: center;
+        cursor: pointer;
+
+        .theme-icon {
+          margin-left: 16px;
+          width: 20px;
+          height: 20px;
+          background: url(".//../../assets/icon-moon.svg");
+        }
+
+        .darkclicked {
+          background: url(".//../../assets/icon-sun.svg");
+        }
+      }
+    }
+
+    .search-input {
+      position: relative;
+      width: 100%;
+      height: 69px;
+      font-size: 18px;
+      background-color: var(--cardBackground);
+      background-image: url("..//../assets/icon-search.svg");
+      color: var(--titlesTextColor);
+      background-repeat: no-repeat;
+      background-position: 25px 25px;
+      border-radius: 15px;
+      border: none;
+      padding-left: 70px;
+      box-shadow: 0px 12px 20px 0px var(--bordershadow);
+    }
+    .error {
+      position: absolute;
+      font-weight: 700;
+      color: $error;
+      transform: translate(-240px, 24px);
+    }
+    button {
+      position: absolute;
+      width: 106px;
+      height: 50px;
+      border: none;
+      border-radius: 10px;
+      background-color: $lightblue;
+      color: $white;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      transform: translate(-115px, 10px);
+      transition: 0.2s ease;
+
+      &:hover {
+        background-color: $buttonhover;
+      }
+    }
+
+    .github-container {
+      width: 100%;
+      height: 419px;
+      background-color: var(--cardBackground);
+      border-radius: 15px;
+      margin-top: 30px;
+      box-shadow: 0px 12px 20px 0px var(--bordershadow);
+
+      .logo-text-flexbox {
+        @include row;
+        justify-content: space-between;
+        padding: 38px 48px;
+
+        .logo-container {
+          width: 117px;
+          height: 117px;
+          border-radius: 100%;
+          background-color: rgb(221, 221, 221);
+        }
+        .text-container {
+          width: 76%;
+
+          .text-top {
+            @include row;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 5px;
+          }
+
+          .profile-bio {
+            width: 100%;
+            height: 60px;
+          }
+
+          .card-grid {
+            display: grid;
+            align-content: center;
+            align-items: center;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 30px);
+            width: 100%;
+            height: 85px;
+            border-radius: 15px;
+            padding-left: 20px;
+            margin-bottom: 25px;
+            background-color: var(--background);
+          }
+          .info-grid {
+            display: grid;
+            align-content: center;
+            align-items: center;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 30px);
+            row-gap: 10px;
+            column-gap: 40px;
+            width: 100%;
+            height: 85px;
+
+            .city,
+            .twitter,
+            .website,
+            .github {
+              @include row;
+
+              .profile-city,
+              .profile-twitter,
+              .profile-github {
+                margin-left: 20px;
+              }
+              .profile-website {
+                margin-left: 16px;
+              }
+
+              .user-icon path {
+                fill: var(--textColor02);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

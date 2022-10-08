@@ -1,0 +1,83 @@
+/********************************************************************/
+/***************************Setting colors***************************/
+/********************************************************************/
+
+//Primary
+$lightblue: #0079ff;
+$buttonhover: #60abff;
+$error: #f74646;
+$white: #ffffff;
+
+//Light mode
+$backgroundLight: #f6f8ff;
+$cardBackgroundLight: #fefefe;
+$borderShadowLight: #cbcccd;
+$titlesTextColorLight: #2b3442;
+$textColor01Light: #697c9a; // Dark & light & Joined date
+$textColor02Light: #4b6a9b; //standard text
+
+//Dark mode
+$backgroundDark: #141d2f;
+$cardBackgroundDark: #1e2a47;
+$borderShadowDark: #141d2f;
+$titlesTextColorDark: #ffffff;
+$textColor01Dark: #ffffff; // Dark & light & Joined date
+$textColor02Dark: #ffffff; //standard text
+
+/***************************Setting body switch***************************/
+
+body.light {
+  --background: #{$backgroundLight};
+  --cardBackground: #{$cardBackgroundLight};
+  --bordershadow: #{$borderShadowLight};
+  --titlesTextColor: #{$titlesTextColorLight};
+  --textColor01: #{$textColor01Light};
+  --textColor02: #{$textColor02Light};
+}
+
+body.dark {
+  --background: #{$backgroundDark};
+  --cardBackground: #{$cardBackgroundDark};
+  --bordershadow: #{$borderShadowDark};
+  --titlesTextColor: #{$titlesTextColorDark};
+  --textColor01: #{$textColor01Dark};
+  --textColor02: #{$textColor02Dark};
+}
+
+/*
+
+  @media (prefers-color-scheme: no-preference) {
+  body.light {
+    --background: #{$backgroundLight};
+    --cardBackground: #{$cardBackgroundLight};
+    --bordershadow: #{$borderShadowLight};
+    --titlesTextColor: #{$titlesTextColorLight};
+    --textColor01: #{$textColor01Light};
+    --textColor02: #{$textColor02Light};
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body.dark {
+    --background: #{$backgroundDark};
+    --cardBackground: #{$cardBackgroundDark};
+    --bordershadow: #{$borderShadowDark};
+    --titlesTextColor: #{$titlesTextColorDark};
+    --textColor01: #{$textColor01Dark};
+    --textColor02: #{$textColor02Dark};
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body.light {
+    --background: #{$backgroundLight};
+    --cardBackground: #{$cardBackgroundLight};
+    --bordershadow: #{$borderShadowLight};
+    --titlesTextColor: #{$titlesTextColorLight};
+    --textColor01: #{$textColor01Light};
+    --textColor02: #{$textColor02Light};
+  }
+
+
+
+*/

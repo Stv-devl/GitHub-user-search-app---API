@@ -1,0 +1,79 @@
+/**********************************************************************/
+/*setting*/
+/**********************************************************************/
+
+/****************************setting fonts***************************/
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+/****************************Setting page****************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  margin-block: 0;
+  outline: none;
+  font-family: "Space Mono", sans-serif;
+}
+
+body {
+  text-align: left;
+  background: var(--background);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--textColor02);
+  transition: background-color 0.3s ease-in-out;
+}
+
+a,
+a:visited {
+  color: rgb(141, 37, 37);
+}
+
+/****************************setting text*****************************/
+h1,
+h3 {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--titlesTextColor);
+}
+
+h2 {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: var(--textColor01);
+}
+
+.profile-id {
+  font-size: 16px;
+  color: $lightblue;
+  margin-bottom: 15px;
+}
+
+P {
+  font-size: 13px;
+}
+.profile-repos,
+.profile-followers,
+.profile-following {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--titlesTextColor);
+}
+
+/***************************Setting mixxin***************************/
+
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin row {
+  display: flex;
+  flex-direction: row;
+}
