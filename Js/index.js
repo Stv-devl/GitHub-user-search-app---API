@@ -30,14 +30,19 @@ let months = [
   "Dec",
 ];
 
+//submit event
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  console.log(input.value);
+  if (input.value !== "") {
+    getApi();
+  } else {
+    alert("Error");
+  }
 });
 
 //function getApi=> get api with fetch and display
 function getApi() {
-  fetch("https://api.github.com/users/octocat", { cache: "no-cache" })
+  fetch(`https://api.github.com/users/${input.value} `, { cache: "no-cache" })
     .then((responce) => responce.json())
     .then((responce) => {
       const data = responce;
@@ -48,8 +53,7 @@ function getApi() {
       let trueMonth = dateChanger[1] - 1;
 
       //display profiles informations
-      logoContainer.style.backgroundImage =
-        "url(https://avatars.githubusercontent.com/u/583231?v=4)";
+      logoContainer.style.backgroundImage = `url(${data.avatar_url})`;
       profileName.textContent = data.name;
       profileJoined.textContent = `Joined ${dateChanger[2]} ${months[trueMonth]} ${dateChanger[0]}`;
       profileLogin.textContent = `@ ${data.login}`;

@@ -216,7 +216,7 @@ main .container .github-container .logo-text-flexbox .logo-container {
   height: 117px;
   background-size: 100%;
   border-radius: 100%;
-  background-color: rgb(221, 221, 221);
+  background-image: url("..//../assets/583231.png");
 }
 main .container .github-container .logo-text-flexbox .text-container {
   width: 76%;
