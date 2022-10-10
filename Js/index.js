@@ -76,12 +76,12 @@ function profilDisplay(data) {
   if (data.bio == null) {
     profileBio.textContent = "This profile has no bio";
   } else {
-    profileBio.textContent = `${data.bio}`;
+    profileBio.textContent = `${data.bio.substr(0, 90)}`;
   }
 
   //display profiles informations
   logoContainer.style.backgroundImage = `url(${data.avatar_url})`;
-  profileName.textContent = `${data.name}`;
+  profileName.textContent = `${data.name.substr(0, 15)}`;
   profileJoined.textContent = `Joined ${dateChanger[2]} ${months[trueMonth]} ${dateChanger[0]}`;
   profileLogin.textContent = `@${data.login}`;
   profileRepos.textContent = `${data.public_repos}`;
@@ -116,7 +116,7 @@ function profilDisplay(data) {
   } else {
     profileBlog.style.opacity = 1;
     iconblog.style.opacity = 1;
-    profileBlog.textContent = data.blog;
+    profileBlog.textContent = data.blog.substr(0, 20);
 
     //for fix link problem (some peoples have an "https://" some dont write it). If the blogAdress variable is undefined its mean the website adress have no "https://" so we will add it manually. Else, the website have an "https://" so we split and create an array at "/" and we had an "https://" again to the array.
     if (blogAdress === undefined) {

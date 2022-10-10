@@ -267,7 +267,7 @@ main .container .github-container {
 main .container .github-container .logo-text-grid {
   display: grid;
   grid-template-columns: 25% 45% 30%;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 40px 40px 50px;
   grid-template-areas: "logo-container profile-name profile-joined" "logo-container profile-login profile-joined" "logo-container profile-bio profile-bio";
   padding: 38px 48px 20px 48px;
   /********************Media********************/
@@ -298,13 +298,13 @@ main .container .github-container .logo-text-grid .profile-joined {
 }
 @media screen and (max-width: 761px) {
   main .container .github-container .logo-text-grid {
-    grid-template-rows: 38px 35px 30px 40px;
+    grid-template-rows: 38px 35px 30px;
   }
 }
 @media screen and (max-width: 535px) {
   main .container .github-container .logo-text-grid {
     grid-template-columns: 30% 70%;
-    grid-template-rows: 25px 25px 50px 50px;
+    grid-template-rows: 25px 25px 50px;
     grid-template-areas: "logo-container profile-name" "logo-container profile-login" "logo-container profile-joined" "profile-bio profile-bio";
     padding: 32px 24px 30px 32px;
     margin: 0 auto;
