@@ -62,7 +62,7 @@ main {
       position: absolute;
       font-weight: 700;
       color: $error;
-      transform: translate(-240px, 24px);
+      transform: translate(-350px, 24px);
     }
     button {
       position: absolute;
@@ -148,12 +148,12 @@ main {
             .github {
               @include row;
 
-              .profile-city,
+              .profile-location,
               .profile-twitter,
-              .profile-github {
+              .profile-company {
                 margin-left: 20px;
               }
-              .profile-website {
+              .profile-blog {
                 margin-left: 16px;
               }
 

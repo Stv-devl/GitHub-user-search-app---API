@@ -178,7 +178,7 @@ main .container .error {
   position: absolute;
   font-weight: 700;
   color: #f74646;
-  transform: translate(-240px, 24px);
+  transform: translate(-350px, 24px);
 }
 main .container button {
   position: absolute;
@@ -264,24 +264,24 @@ main .container .github-container .logo-text-flexbox .text-container .info-grid 
   display: flex;
   flex-direction: row;
 }
-main .container .github-container .logo-text-flexbox .text-container .info-grid .city .profile-city,
+main .container .github-container .logo-text-flexbox .text-container .info-grid .city .profile-location,
 main .container .github-container .logo-text-flexbox .text-container .info-grid .city .profile-twitter,
-main .container .github-container .logo-text-flexbox .text-container .info-grid .city .profile-github,
-main .container .github-container .logo-text-flexbox .text-container .info-grid .twitter .profile-city,
+main .container .github-container .logo-text-flexbox .text-container .info-grid .city .profile-company,
+main .container .github-container .logo-text-flexbox .text-container .info-grid .twitter .profile-location,
 main .container .github-container .logo-text-flexbox .text-container .info-grid .twitter .profile-twitter,
-main .container .github-container .logo-text-flexbox .text-container .info-grid .twitter .profile-github,
-main .container .github-container .logo-text-flexbox .text-container .info-grid .website .profile-city,
+main .container .github-container .logo-text-flexbox .text-container .info-grid .twitter .profile-company,
+main .container .github-container .logo-text-flexbox .text-container .info-grid .website .profile-location,
 main .container .github-container .logo-text-flexbox .text-container .info-grid .website .profile-twitter,
-main .container .github-container .logo-text-flexbox .text-container .info-grid .website .profile-github,
-main .container .github-container .logo-text-flexbox .text-container .info-grid .github .profile-city,
+main .container .github-container .logo-text-flexbox .text-container .info-grid .website .profile-company,
+main .container .github-container .logo-text-flexbox .text-container .info-grid .github .profile-location,
 main .container .github-container .logo-text-flexbox .text-container .info-grid .github .profile-twitter,
-main .container .github-container .logo-text-flexbox .text-container .info-grid .github .profile-github {
+main .container .github-container .logo-text-flexbox .text-container .info-grid .github .profile-company {
   margin-left: 20px;
 }
-main .container .github-container .logo-text-flexbox .text-container .info-grid .city .profile-website,
-main .container .github-container .logo-text-flexbox .text-container .info-grid .twitter .profile-website,
-main .container .github-container .logo-text-flexbox .text-container .info-grid .website .profile-website,
-main .container .github-container .logo-text-flexbox .text-container .info-grid .github .profile-website {
+main .container .github-container .logo-text-flexbox .text-container .info-grid .city .profile-blog,
+main .container .github-container .logo-text-flexbox .text-container .info-grid .twitter .profile-blog,
+main .container .github-container .logo-text-flexbox .text-container .info-grid .website .profile-blog,
+main .container .github-container .logo-text-flexbox .text-container .info-grid .github .profile-blog {
   margin-left: 16px;
 }
 main .container .github-container .logo-text-flexbox .text-container .info-grid .city .user-icon path,

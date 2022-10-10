@@ -11,9 +11,10 @@ function starterTheme() {
   const noPreference = window.matchMedia(
     "(prefers-color-scheme: no-preference)"
   );
+  /*
   console.log(preferLight.matches);
   console.log(preferDark.matches);
-  console.log(noPreference.matches);
+  console.log(noPreference.matches);*/
 
   if (preferLight.matches == true) {
     body.classList.add("light");
