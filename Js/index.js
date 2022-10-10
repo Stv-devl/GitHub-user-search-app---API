@@ -3,7 +3,7 @@ const input = document.querySelector("input");
 const form = document.querySelector("form");
 const errorDisplay = document.querySelector(".error");
 
-//submit event
+//submit event, if nothing is write in the input => error display, else launch getApy function (with the input value)
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   if (input.value === "") {
@@ -13,6 +13,8 @@ form.addEventListener("submit", (e) => {
     getApi(input.value);
   }
 });
+
+//async function for get the API. Search the input.value, if its match we create a Json file and launch profil display (with the data). If have no profil match with the input.value we get the error message.
 
 async function getApi() {
   try {
@@ -33,7 +35,7 @@ async function getApi() {
   }
 }
 
-//function getApi=> get api with fetch and display user information
+//Function for display the profile informations fro API.
 function profilDisplay(data) {
   //Variable for display user information
   const logoContainer = document.querySelector(".logo-container");
@@ -66,18 +68,7 @@ function profilDisplay(data) {
   let dateChanger = data.created_at.split("T").shift().split("-");
   let trueMonth = dateChanger[1] - 1;
 
-  //function for set empty data
-  function setNull(set1, set2) {
-    if (set1 === null || set1 === "") {
-      set2.style.opacity = 0.5;
-      set2.previousSibling.style.opacity = 0.5;
-      set2.textContent = "Not Available";
-      return;
-    } else {
-      return set1;
-    }
-  }
-
+  //if bio is empty get the empty message, else display the bio
   if (data.bio == null) {
     profileBio.textContent = "This profile has no bio"; // c'est le texte content qui marche pas
   } else {
@@ -93,10 +84,37 @@ function profilDisplay(data) {
   profileFollowers.textContent = `${data.followers}`;
   profileFollowing.textContent = `${data.following}`;
 
-  profileCompany.textContent = setNull(data.company, profileCompany); //ok
-  profileBlog.textContent = setNull(data.blog, profileBlog);
-  profileLocation.textContent = setNull(data.location, profileLocation); //ok
-  profileTwitter.textContent = setNull(data.twitter_username, profileTwitter); //ok???
-
+  //if company is empty get the empty message and opacity 0.5, else display the company name
+  if (data.company == null) {
+    profileCompany.textContent = "Not Available";
+    profileCompany.style.opacity = 0.5;
+    iconcompany.style.opacity = 0.5;
+  } else {
+    profileBlog.textContent = data.company;
+  }
+  //if location is empty get the empty message and opacity 0.5, else display the city name
+  if (data.location == null) {
+    profileLocation.textContent = "Not Available";
+    profileLocation.style.opacity = 0.5;
+    iconlocation.style.opacity = 0.5;
+  } else {
+    profileBlog.textContent = data.location;
+  }
+  //if blog is empty get the empty message and opacity 0.5, else display the blog adress
+  if (data.blog === "") {
+    profileBlog.textContent = "Not Available";
+    profileBlog.style.opacity = 0.5;
+    iconblog.style.opacity = 0.5;
+  } else {
+    profileBlog.textContent = data.blog;
+  }
+  //if twitter is empty get the empty message and opacity 0.5, else display the twitter name
+  if (data.twitter == null) {
+    profileTwitter.textContent = "Not Available";
+    profileTwitter.style.opacity = 0.5;
+    icontwitter.style.opacity = 0.5;
+  } else {
+    profileTwitter.textContent = data.twitter_username;
+  }
   errorDisplay.textContent = "";
 }
