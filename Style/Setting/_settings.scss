@@ -25,11 +25,12 @@ body {
   font-weight: 400;
   color: var(--textColor02);
   transition: background-color 0.3s ease-in-out;
-}
 
-a,
-a:visited {
-  color: rgb(141, 37, 37);
+  /********************Media********************/
+  @media screen and (max-width: 761px) {
+    font-size: 13px;
+  }
+  /*********************************************/
 }
 
 /****************************setting text*****************************/
@@ -38,6 +39,14 @@ h3 {
   font-size: 26px;
   font-weight: 700;
   color: var(--titlesTextColor);
+}
+
+/********************Media********************/
+h3 {
+  @media screen and (max-width: 761px) {
+    font-size: 16px;
+  }
+  /*********************************************/
 }
 
 h2 {
@@ -52,17 +61,35 @@ h2 {
   font-size: 16px;
   color: $lightblue;
   margin-bottom: 15px;
+
+  /********************Media********************/
+  @media screen and (max-width: 535px) {
+    font-size: 13px;
+  }
+  /*********************************************/
 }
 
-P {
+.p13 {
   font-size: 13px;
+  /********************Media********************/
+  @media screen and (max-width: 535px) {
+    font-size: 11px;
+  }
+  /*********************************************/
 }
+
 .profile-repos,
 .profile-followers,
 .profile-following {
   font-size: 22px;
   font-weight: 700;
   color: var(--titlesTextColor);
+
+  /********************Media********************/
+  @media screen and (max-width: 761px) {
+    font-size: 16px;
+  }
+  /*********************************************/
 }
 
 /***************************Setting mixxin***************************/
@@ -76,4 +103,11 @@ P {
 @mixin row {
   display: flex;
   flex-direction: row;
+}
+
+/***************************Text link***************************/
+a,
+a:visited {
+  color: var(--textColor02);
+  text-decoration: none;
 }

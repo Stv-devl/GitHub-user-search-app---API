@@ -11,30 +11,34 @@ function starterTheme() {
   const noPreference = window.matchMedia(
     "(prefers-color-scheme: no-preference)"
   );
-  /*
-  console.log(preferLight.matches);
-  console.log(preferDark.matches);
-  console.log(noPreference.matches);*/
 
   if (preferLight.matches == true) {
     body.classList.add("light");
+    switchtxt.textContent = "dark";
+    themeIcon.classList.remove("darkclicked");
   } else if (preferDark.matches == true) {
     body.classList.add("dark");
+    switchtxt.textContent = "light";
+    themeIcon.classList.add("darkclicked");
   } else {
     body.classList.add("light");
+    switchtxt.textContent = "dark";
+    themeIcon.classList.remove("darkclicked");
   }
 }
 starterTheme();
 
-//toogle light and dark & icon
+//toggle light and dark & icons
 switchs.addEventListener("click", () => {
   if (body.classList == "dark") {
     body.classList.remove("dark");
     body.classList.add("light");
+    switchtxt.textContent = "dark";
     themeIcon.classList.remove("darkclicked");
   } else {
     body.classList.remove("light");
     body.classList.add("dark");
+    switchtxt.textContent = "light";
     themeIcon.classList.add("darkclicked");
   }
 });

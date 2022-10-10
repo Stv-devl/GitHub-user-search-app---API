@@ -15,6 +15,7 @@ $borderShadowLight: #cbcccd;
 $titlesTextColorLight: #2b3442;
 $textColor01Light: #697c9a; // Dark & light & Joined date
 $textColor02Light: #4b6a9b; //standard text
+$textHoverColorLight: #2b3442; //Hover switch
 
 //Dark mode
 $backgroundDark: #141d2f;
@@ -23,56 +24,26 @@ $borderShadowDark: #141d2f;
 $titlesTextColorDark: #ffffff;
 $textColor01Dark: #ffffff; // Dark & light & Joined date
 $textColor02Dark: #ffffff; //standard text
+$textHoverColorDark: #697c9a; //Hover switch
 
 /***************************Setting body switch***************************/
 
-body.light {
+.light {
   --background: #{$backgroundLight};
   --cardBackground: #{$cardBackgroundLight};
   --bordershadow: #{$borderShadowLight};
   --titlesTextColor: #{$titlesTextColorLight};
   --textColor01: #{$textColor01Light};
   --textColor02: #{$textColor02Light};
+  --textHoverColor: #{$textHoverColorLight};
 }
 
-body.dark {
+.dark {
   --background: #{$backgroundDark};
   --cardBackground: #{$cardBackgroundDark};
   --bordershadow: #{$borderShadowDark};
   --titlesTextColor: #{$titlesTextColorDark};
   --textColor01: #{$textColor01Dark};
   --textColor02: #{$textColor02Dark};
-}
-
-@media (prefers-color-scheme: no-preference) {
-  body.light {
-    --background: #{$backgroundLight};
-    --cardBackground: #{$cardBackgroundLight};
-    --bordershadow: #{$borderShadowLight};
-    --titlesTextColor: #{$titlesTextColorLight};
-    --textColor01: #{$textColor01Light};
-    --textColor02: #{$textColor02Light};
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  body.dark {
-    --background: #{$backgroundDark};
-    --cardBackground: #{$cardBackgroundDark};
-    --bordershadow: #{$borderShadowDark};
-    --titlesTextColor: #{$titlesTextColorDark};
-    --textColor01: #{$textColor01Dark};
-    --textColor02: #{$textColor02Dark};
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  body.light {
-    --background: #{$backgroundLight};
-    --cardBackground: #{$cardBackgroundLight};
-    --bordershadow: #{$borderShadowLight};
-    --titlesTextColor: #{$titlesTextColorLight};
-    --textColor01: #{$textColor01Light};
-    --textColor02: #{$textColor02Light};
-  }
+  --textHoverColor: #{$textHoverColorDark};
 }
