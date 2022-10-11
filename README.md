@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./Screenshot/ScreenshotFrontend%20Mentor%20GitHub%20user%20search%20app.png)
 
 ### Links
 

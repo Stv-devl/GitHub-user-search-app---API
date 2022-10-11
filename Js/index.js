@@ -76,7 +76,7 @@ function profilDisplay(data) {
   if (data.bio == null) {
     profileBio.textContent = "This profile has no bio";
   } else {
-    profileBio.textContent = `${data.bio.substr(0, 90)}`;
+    profileBio.textContent = `${data.bio.substr(0, 80)}`;
   }
 
   //display profiles informations

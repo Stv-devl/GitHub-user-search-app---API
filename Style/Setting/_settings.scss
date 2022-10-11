@@ -34,15 +34,18 @@ body {
 }
 
 /****************************setting text*****************************/
-h1,
-h3 {
+h1 {
   font-size: 26px;
   font-weight: 700;
   color: var(--titlesTextColor);
 }
 
-/********************Media********************/
 h3 {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--titlesTextColor);
+
+  /********************Media********************/
   @media screen and (max-width: 761px) {
     font-size: 16px;
   }
