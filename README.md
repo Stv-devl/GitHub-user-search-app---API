@@ -54,10 +54,10 @@ Users should be able to:
 ### What I learned
 
 It was a nice project. I used many time to fix some bug.
-=> asynchrone function for get apy
-=> fixing links problems
-=> limit the number of characters in "textContent"
-=> Prefer-color-sheme and switch
+I try to use asynchrone function for api
+I fixed user website links problems
+I limited the number of characters in "textContent" for the profiles with long bio or long name.
+I used prefer-color-sheme and switch
 
 ### Continued development
 
