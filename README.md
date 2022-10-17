@@ -1,6 +1,6 @@
-# Frontend Mentor - GitHub user search app solution
+# Frontend Mentor - E-commerce product page solution
 
-This is a solution to the [GitHub user search app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [E-commerce product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -9,11 +9,9 @@ This is a solution to the [GitHub user search app challenge on Frontend Mentor](
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
-
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-
 - [Author](#author)
 
 ## Overview
@@ -22,12 +20,12 @@ This is a solution to the [GitHub user search app challenge on Frontend Mentor](
 
 Users should be able to:
 
-- View the optimal layout for the app depending on their device's screen size
+- View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
-- Search for GitHub users by their username
-- See relevant user information based on their search
-- Switch between light and dark themes
-- **Bonus**: Have the correct color scheme chosen for them based on their computer preferences. _Hint_: Research `prefers-color-scheme` in CSS.
+- Open a lightbox gallery by clicking on the large product image
+- Switch the large product image by clicking on the small thumbnail images
+- Add items to the cart
+- View the cart and remove items from it
 
 ### Screenshot
 
@@ -35,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor solution]()
-- Live Site URL: [Live website](https://stv-devl.github.io/GitHub-user-search-app---API/)
+- Solution URL: [Frontend mentor solution](https://your-solution-url.com)
+- Live Site URL: [Here](https://stv-devl.github.io/Ecommerce-product-page/)
 
 ## My process
 
@@ -47,21 +45,17 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- SASS-SCSSS
+- SASS / SCSS
 - Vanilla JS
-- API
 
 ### What I learned
 
-It was a nice project. I used many time to fix some bug.
-I try to use asynchrone function for api
-I fixed user website links problems
-I limited the number of characters in "textContent" for the profiles with long bio or long name.
-I used prefer-color-sheme and switch
+This challenge was nice. Many things to do in CSS and JS.
+I learned to build overlay and lightbox.
 
 ### Continued development
 
-Practice API project and improve my vanilla JS skill.
+So many things to practice
 
 ## Author
 
